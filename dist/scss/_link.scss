@@ -1,0 +1,44 @@
+.link-container {
+  height: 150px;
+  background: url(../images/bg-boost-desktop.svg) $dark-Violet 100% no-repeat;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 4rem;
+  margin-top: 3rem;
+  z-index: 100;
+
+  &_input {
+    width: 70%;
+    height: 40%;
+    margin-left: -2rem;
+    margin-block: auto;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.2rem;
+    padding-left: 25px;
+
+    &::placeholder {
+      font-size: 1.2rem;
+      padding-left: 10px;
+    }
+  }
+
+  &_button {
+    padding: 10px 5px;
+    height: 60px;
+    width: 170px;
+    background: $cyan;
+    color: $white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-block: auto;
+    font-weight: 800;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

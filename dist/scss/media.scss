@@ -1,119 +1,117 @@
 @import "config";
 
 @media (min-width: 375px) and (max-width: 800px) {
-	// Mobile Nav
-	.mobile-nav {
-		display: block;
-		z-index: 950;
-		margin-inline: auto;
-		width: 90%;
+  // Mobile Nav
+  .mobile-nav {
+    display: block;
+    z-index: 950;
+    margin-inline: auto;
+    width: 90%;
 
-		&_toggler {
-			z-index: 950;
-			height: 50px;
-			width: 50px;
-			padding: 0.6rem;
-			position: absolute;
-			top: 1rem;
-			right: 2rem;
-			opacity: 0;
-		}
+    &_toggler {
+      z-index: 950;
+      height: 50px;
+      width: 50px;
+      padding: 0.6rem;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      opacity: 0;
+    }
 
-		&_toggler:checked + &_hamburger > div {
-			background-color: rgba(0, 0, 0, 0);
-		}
+    &_toggler:checked + &_hamburger > div {
+      background-color: rgba(0, 0, 0, 0);
+    }
 
-		&_toggler:checked + &_hamburger > div::before {
-			top: 0;
-			transform: rotate((45deg));
-			background: $very-dark-blue;
-		}
-		&_toggler:checked + &_hamburger > div::after {
-			top: 0;
-			transform: rotate((135deg));
-			background: $very-dark-blue;
-		}
-		&_hamburger {
-			position: absolute;
-			top: 1rem;
-			height: 40px;
-			width: 50px;
-			padding: 0.6rem;
-			right: 0.6rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			div {
-				position: relative;
-				top: 0;
-				right: 0.8rem;
-				background-color: $very-dark-blue;
-				height: 4px;
-				width: 100%;
-				transition: all 0.4s ease;
+    &_toggler:checked + &_hamburger > div::before {
+      top: 0;
+      transform: rotate((45deg));
+      background: $very-dark-blue;
+    }
+    &_toggler:checked + &_hamburger > div::after {
+      top: 0;
+      transform: rotate((135deg));
+      background: $very-dark-blue;
+    }
+    &_hamburger {
+      position: absolute;
+      top: 1rem;
+      height: 40px;
+      width: 50px;
+      padding: 0.6rem;
+      right: 0.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        position: relative;
+        top: 0;
+        right: 0.8rem;
+        background-color: $very-dark-blue;
+        height: 4px;
+        width: 100%;
+        transition: all 0.4s ease;
 
-				&::after,
-				&::before {
-					content: "";
-					top: -10px;
-					background: $very-dark-blue;
-					width: 100%;
-					height: 4px;
-					z-index: 950;
-					position: absolute;
-					transition: all 0.4s ease;
-				}
+        &::after,
+        &::before {
+          content: "";
+          top: -10px;
+          background: $very-dark-blue;
+          width: 100%;
+          height: 4px;
+          z-index: 950;
+          position: absolute;
+          transition: all 0.4s ease;
+        }
 
-				&::after {
-					top: 10px;
-					z-index: inherit;
-				}
-			}
-		}
+        &::after {
+          top: 10px;
+          z-index: inherit;
+        }
+      }
+    }
 
-		&_menu {
-			overflow-x: hidden auto;
-			width: 0%;
-			height: auto;
-			position: absolute;
-			top: 61px;
-			// left: 60px;
-			z-index: 2;
-			transition: 0.3s;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			text-align: center;
+    &_menu {
+      overflow-x: hidden auto;
+      width: 0%;
+      height: auto;
+      position: absolute;
+      top: 61px;
+      z-index: 2;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
 
-			a {
-				color: $very-dark-blue;
-				font-size: 1.5rem;
-			}
+      a {
+        color: $very-dark-blue;
+        font-size: 1.5rem;
+      }
 
-			div > ul {
-				display: flex;
-				flex-direction: column;
-				// position: fixed;
-				top: 4rem;
-				padding-inline-start: 15px;
-				visibility: hidden;
-			}
+      div > ul {
+        display: flex;
+        flex-direction: column;
+        top: 4rem;
+        padding-inline-start: 15px;
+        visibility: hidden;
+      }
 
-			div > ul > li {
-				padding: 0.5rem;
-			}
-		}
+      div > ul > li {
+        padding: 0.5rem;
+      }
+    }
 
-		&_toggler:checked ~ &_menu {
-			position: absolute;
-			width: 90%;
-			z-index: 949;
-		}
+    &_toggler:checked ~ &_menu {
+      position: absolute;
+      width: 90%;
+      z-index: 949;
+    }
 
-		&_toggler:checked ~ &_menu > div > ul {
-			transition: visibility 0.4s ease;
-			transition-delay: 0.1s;
-			visibility: visible;
-		}
-	}
+    &_toggler:checked ~ &_menu > div > ul {
+      transition: visibility 0.4s ease;
+      transition-delay: 0.1s;
+      visibility: visible;
+    }
+  }
 }
