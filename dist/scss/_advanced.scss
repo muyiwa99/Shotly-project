@@ -1,64 +1,64 @@
 .advanced-stats {
-  height: 80vh;
-  background: $whisper;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	height: max(100vh, 500px);
+	background: $whisper;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-  &_header {
-    width: 40%;
-    margin-inline: auto;
-    text-align: center;
-    margin-block-end: 5rem;
+	&_header {
+		width: 40%;
+		margin-inline: auto;
+		text-align: center;
+		margin-block-end: 5rem;
 
-    h2 {
-      font-size: 2.2rem;
-    }
-    p {
-      color: $grayish-violet;
-      font-weight: 300;
-    }
-  }
+		h2 {
+			font-size: 2.2rem;
+		}
+		p {
+			color: $grayish-violet;
+			font-weight: 300;
+		}
+	}
 
-  hr {
-    height: 10px;
-    display: block;
-    width: 70%;
-    margin-inline: auto;
-    background-color: $cyan;
-    border: none;
-    position: relative;
-    top: 7rem;
-  }
+	hr {
+		height: 10px;
+		display: block;
+		width: 70%;
+		margin-inline: auto;
+		background-color: $cyan;
+		border: none;
+		position: relative;
+		top: 7rem;
+	}
 
-  &_information-box {
-    display: flex;
-    width: 90%;
-    margin-inline: auto;
-    gap: 1.5rem;
-    .box {
-      background: $white;
-      padding: 3.7rem;
-      border-radius: 4px;
-      position: relative;
-    }
+	&_information-box {
+		display: flex;
+		width: 90%;
+		margin-inline: auto;
+		gap: 1.5rem;
+		.box {
+			background: $white;
+			padding: 3.7rem;
+			border-radius: 4px;
+			position: relative;
+		}
 
-    .box h3 {
-      font-size: 1.3rem;
-      margin-block-end: 1rem;
-    }
+		.box h3 {
+			font-size: 1.3rem;
+			margin-block-end: 1rem;
+		}
 
-    .box p {
-      font-size: 0.8rem;
-      color: $grayish-violet;
-    }
+		.box p {
+			font-size: 0.8rem;
+			color: $grayish-violet;
+		}
 
-    .box:nth-child(1) {
-      bottom: 2.5rem;
-    }
+		.box:nth-child(1) {
+			bottom: 2.5rem;
+		}
 
-    .box:nth-child(3) {
-      top: 2.5rem;
-    }
-  }
+		.box:nth-child(3) {
+			top: 2.5rem;
+		}
+	}
 }

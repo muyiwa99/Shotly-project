@@ -7,36 +7,39 @@
 @import "config";
 @import "boost";
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 .attribution {
-  display: flex;
-  justify-content: center;
-  background: $very-dark-blue;
-  height: 6vh;
-  color: $white;
+	display: flex;
+	justify-content: center;
+	background: $very-dark-blue;
+	height: 6vh;
+	color: $white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 
-  a {
-    color: $cyan;
-    text-indent: 10px;
-  }
+	a {
+		color: $cyan;
+		text-indent: 10px;
+	}
 }
 
 li,
 a {
-  text-decoration: none;
-  list-style: none;
+	text-decoration: none;
+	list-style: none;
 }
 
 .mobile-nav {
-  display: none;
+	display: none;
 }
