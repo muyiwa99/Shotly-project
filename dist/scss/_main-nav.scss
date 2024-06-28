@@ -13,6 +13,11 @@
       display: flex;
       gap: 1rem;
       color: $grayish-violet;
+
+      li:hover {
+        cursor: pointer;
+        color: $dark-Violet;
+      }
     }
   }
   // Right side
@@ -22,6 +27,11 @@
     width: max(20%, 30px);
     .login {
       color: $gray;
+
+      &:hover {
+        cursor: pointer;
+        color: $dark-Violet;
+      }
     }
 
     .sign-up {

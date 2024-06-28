@@ -33,3 +33,9 @@
     }
   }
 }
+
+@media (min-width: 375px) and (max-width: 800px) {
+  .boost-section {
+    background: url(../images/bg-boost-mobile.svg) $dark-Violet 100% no-repeat;
+  }
+}

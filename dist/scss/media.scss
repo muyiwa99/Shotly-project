@@ -1,6 +1,9 @@
 @import "config";
 
 @media (min-width: 375px) and (max-width: 800px) {
+  .main-nav {
+    visibility: hidden;
+  }
   // Mobile Nav
   .mobile-nav {
     display: block;
@@ -8,6 +11,10 @@
     margin-inline: auto;
     width: 90%;
 
+    &_logo {
+      position: relative;
+      top: 2rem;
+    }
     &_toggler {
       z-index: 950;
       height: 50px;
@@ -76,16 +83,23 @@
       width: 0%;
       height: auto;
       position: absolute;
-      top: 61px;
+      top: 91px;
       z-index: 2;
       transition: 0.3s;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      background: $dark-Violet;
+      border-radius: 4px;
 
+      hr {
+        width: 90%;
+        align-self: center;
+        margin-block-end: 1.5rem;
+      }
       a {
-        color: $very-dark-blue;
+        color: $white;
         font-size: 1.5rem;
       }
 
@@ -99,6 +113,25 @@
 
       div > ul > li {
         padding: 0.5rem;
+        margin-bottom: 1rem;
+
+        &:nth-child(6) {
+          // padding: 1rem 2.3rem;
+          height: 50px;
+          width: 160px;
+          background: $cyan;
+          color: $white;
+          font-size: 1.1rem;
+          border: none;
+          border-radius: 24px;
+          cursor: pointer;
+          font-weight: 600;
+          align-self: center;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
       }
     }
 

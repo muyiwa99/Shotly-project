@@ -20,6 +20,7 @@
   <body>
     <!-- Mobile Nav  -->
     <div class="mobile-nav">
+      <div class="mobile-nav_logo"><img src="images/logo.svg" alt="" /></div>
       <input type="checkbox" class="mobile-nav_toggler" />
       <div class="mobile-nav_hamburger"><div></div></div>
 
@@ -78,12 +79,24 @@
 
     <!-- Link Section -->
     <div class="link-container margin-inline">
-      <input
-        type="url"
-        placeholder="Shorten a link here..."
-        class="link-container_input"
-      />
-      <button class="link-container_button">Shorten It!</button>
+      <div class="link-container_input">
+        <input
+          type="url"
+          placeholder="Shorten a link here..."
+          class="link-container_input"
+        />
+        <button class="link-container_button">SHORTEN IT!</button>
+      </div>
+
+      <div class="link-container_link-box">
+        <p class="old-link">https://satyamfilm.com/demo</p>
+        <hr />
+        <div class="new">
+          <a href="#" class="new-link">Https://testlink.com</a>
+
+          <button class="copy-button">Copy</button>
+        </div>
+      </div>
     </div>
     <!-- Link Section ^-->
 
@@ -98,17 +111,24 @@
         </p>
       </div>
       <hr />
+      <div class="vl"></div>
       <div class="advanced-stats_information-box">
         <div class="box">
-          <div class="icon"></div>
+          <div class="icon">
+            <img src="images/icon-brand-recognition.svg" alt="icon" />
+          </div>
+
           <h3>Brand Recognition</h3>
+
           <p>
             Boost your brand recognition with each click. Generic links don’t
             mean a thing. Branded links help instil confidence in your content.
           </p>
         </div>
         <div class="box">
-          <div class="icon"></div>
+          <div class="icon">
+            <img src="images/icon-detailed-records.svg" alt="icon" />
+          </div>
           <h3>Detailed Records</h3>
           <p>
             Gain insights into who is clicking your links. Knowing when and
@@ -116,7 +136,9 @@
           </p>
         </div>
         <div class="box">
-          <div class="icon"></div>
+          <div class="icon">
+            <img src="images/icon-fully-customizable.svg" alt="icon" />
+          </div>
           <h3>Fully Customizable</h3>
           <p>
             Improve brand awareness and content discoverability through
@@ -179,13 +201,14 @@
     </footer>
 
     <div class="attribution">
-      Challenge by  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>
-        </a
-      >. Coded by <a href="https://github.com/"> Muyiwa Areola</a>.
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor</a
+      >
+      . Coded by <a href="https://github.com/"> Muyiwa Areola</a>.
     </div>
   </body>
 </html>
-
 
 <!-- #TODO 
  - Media Qs
@@ -193,4 +216,3 @@
  - Link output tenplate 
  - Hover states 
   -->
- 

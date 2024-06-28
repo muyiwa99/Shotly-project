@@ -1,35 +1,78 @@
 .footer {
-	background: $very-dark-blue;
-	color: $white;
-	height: auto;
+  background: $very-dark-blue;
+  color: $white;
+  height: auto;
 
-	&-container {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr) 3fr repeat(3, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 3fr repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
-		&_logo {
-			grid-area: 2 / 2 / 3 / 3;
-			filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(350deg)
-				brightness(105%) contrast(101%);
-		}
+    &_logo {
+      grid-area: 2 / 2 / 3 / 3;
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(350deg)
+        brightness(105%) contrast(101%);
 
-		&_links {
-			grid-area: 2 / 4 / 3 / 5;
-			display: flex;
-			justify-content: space-evenly;
-			ul li a {
-				color: $grayish-violet;
-				font-size: smaller;
-			}
-		}
+      &:hover {
+        filter: brightness(0) saturate(100%) invert(71%) sepia(28%)
+          saturate(1010%) hue-rotate(130deg) brightness(92%) contrast(96%);
+        cursor: pointer;
+      }
+    }
 
-		&_social {
-			grid-area: 2 / 6 / 3 / 7;
-			display: flex;
-			justify-content: space-around;
-		}
-	}
+    &_links {
+      grid-area: 2 / 4 / 3 / 5;
+      display: flex;
+      justify-content: space-evenly;
+      ul li a {
+        color: $grayish-violet;
+        font-size: smaller;
+
+        &:hover {
+          color: $cyan;
+        }
+      }
+    }
+
+    &_social {
+      grid-area: 2 / 6 / 3 / 7;
+      display: flex;
+      justify-content: space-around;
+      div:hover {
+        filter: brightness(0) saturate(100%) invert(71%) sepia(28%)
+          saturate(1010%) hue-rotate(130deg) brightness(92%) contrast(96%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 800px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+
+    &_logo {
+      align-self: center;
+      margin-block-start: 2rem;
+    }
+
+    &_links {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+      margin-block-start: 1rem;
+    }
+
+    &_social {
+      justify-content: center;
+      margin: 1.5rem auto;
+      gap: 1.5rem;
+    }
+  }
 }
