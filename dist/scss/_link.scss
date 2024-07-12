@@ -1,132 +1,134 @@
 .link-container {
-  position: relative;
-  top: 11rem;
-  height: auto;
-  &_input {
-    height: 150px;
-    background: url(../images/bg-boost-desktop.svg) $dark-Violet 100% no-repeat;
-    display: flex;
-    justify-content: center;
-    border-radius: 8px;
-    gap: 4rem;
-    margin-top: 3rem;
-    z-index: 100;
+	position: relative;
+	top: 11rem;
+	height: auto;
+	padding-bottom: 4rem;
 
-    input {
-      width: 70%;
-      height: 40%;
-      margin-left: -2rem;
-      margin-block: auto;
-      border-radius: 12px;
-      border: none;
-      font-size: 1.2rem;
-      padding-left: 25px;
-      background: $white;
-    }
-    &::placeholder {
-      font-size: 1.2rem;
-      padding-left: 10px;
-    }
-  }
+	&_input {
+		height: 150px;
+		background: url(../images/bg-boost-desktop.svg) $dark-Violet 100% no-repeat;
+		display: flex;
+		justify-content: center;
+		border-radius: 8px;
+		gap: 4rem;
+		margin-top: 3rem;
+		z-index: 100;
 
-  &_button {
-    padding: 10px 5px;
-    height: 60px;
-    width: 170px;
-    background: $cyan;
-    color: $white;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    margin-block: auto;
-    font-weight: 800;
+		input {
+			width: 70%;
+			height: 40%;
+			margin-left: -2rem;
+			margin-block: auto;
+			border-radius: 12px;
+			border: none;
+			font-size: 1.2rem;
+			padding-left: 25px;
+			background: $white;
+		}
+		&::placeholder {
+			font-size: 1.2rem;
+			padding-left: 10px;
+		}
+	}
 
-    &:hover {
-      opacity: 0.8;
-    }
-  }
+	&_button {
+		padding: 10px 5px;
+		height: 60px;
+		width: 170px;
+		background: $cyan;
+		color: $white;
+		font-size: 1.1rem;
+		border: none;
+		border-radius: 16px;
+		cursor: pointer;
+		margin-block: auto;
+		font-weight: 800;
 
-  &_link-box {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    height: auto;
-    border: none;
-    padding: 20px 10px;
-    border-radius: 2px;
-    background: $white;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 
-    hr {
-      visibility: hidden;
-    }
-    .new {
-      display: inherit;
-      gap: 2rem;
+	&_link-box {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 1rem;
+		height: auto;
+		border: 1px rgb(231, 234, 236) solid;
+		padding: 20px 10px;
+		border-radius: 4px;
+		background: $white;
 
-      .new-link {
-        color: $cyan;
-      }
+		hr {
+			visibility: hidden;
+		}
+		.new {
+			display: inherit;
+			gap: 2rem;
 
-      .copy-button {
-        height: 40px;
-        padding: 0.5rem 0.5rem;
-        width: 100px;
-        background: $cyan;
-        border: none;
-        color: $white;
-        font-size: large;
-        font-weight: 500;
-        border-radius: 4px;
-        margin-top: -0.5rem;
-        cursor: pointer;
+			.new-link {
+				color: $cyan;
+			}
 
-        &:hover {
-          opacity: 0.9;
-        }
-      }
-    }
-  }
+			.copy-button {
+				height: 40px;
+				padding: 0.5rem 0.5rem;
+				width: 100px;
+				background: $cyan;
+				border: none;
+				color: $white;
+				font-size: large;
+				font-weight: 500;
+				border-radius: 4px;
+				margin-top: -0.5rem;
+				cursor: pointer;
+
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 375px) and (max-width: 800px) {
-  .link-container {
-    &_input {
-      flex-direction: column;
-      gap: 0rem;
-      align-items: center;
-      background: url(../images/bg-boost-mobile.svg) $dark-Violet 100% no-repeat;
-      position: relative;
-      // top: 6rem;
-      input {
-        width: 90%;
-        margin-left: 0;
-        height: 35%;
-      }
-    }
+	.link-container {
+		&_input {
+			flex-direction: column;
+			gap: 0rem;
+			align-items: center;
+			background: url(../images/bg-boost-mobile.svg) $dark-Violet 100% no-repeat;
+			position: relative;
+			// top: 6rem;
+			input {
+				width: 90%;
+				margin-left: 0;
+				height: 35%;
+			}
+		}
 
-    &_button {
-      height: 50px;
-      width: 90%;
-    }
+		&_button {
+			height: 50px;
+			width: 90%;
+		}
 
-    &_link-box {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-      align-items: center;
-      border: 1px solid $gray;
-      hr {
-        visibility: visible; // height: 10px;
-        width: 100%;
-      }
-      .new {
-        flex-direction: column;
+		&_link-box {
+			flex-direction: column;
+			gap: 1rem;
+			width: 100%;
+			align-items: center;
+			border: 1px solid $gray;
+			hr {
+				visibility: visible; // height: 10px;
+				width: 100%;
+			}
+			.new {
+				flex-direction: column;
 
-        .copy-button {
-          width: 100%;
-        }
-      }
-    }
-  }
+				.copy-button {
+					width: 100%;
+				}
+			}
+		}
+	}
 }

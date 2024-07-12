@@ -109,6 +109,7 @@
   position: relative;
   top: 11rem;
   height: auto;
+  padding-bottom: 4rem;
 }
 .link-container_input {
   height: 150px;
@@ -160,9 +161,9 @@
   justify-content: space-between;
   margin-top: 1rem;
   height: auto;
-  border: none;
+  border: 1px rgb(231, 234, 236) solid;
   padding: 20px 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   background: hsl(0, 0%, 100%);
 }
 .link-container_link-box hr {
