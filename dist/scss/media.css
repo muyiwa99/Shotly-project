@@ -3,6 +3,14 @@
   width: 80%;
 }
 
+.link-container_inputE::-moz-placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
+.link-container_inputE::placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
 @media (min-width: 375px) and (max-width: 800px) {
   .main-nav {
     visibility: hidden;

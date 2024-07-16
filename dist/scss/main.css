@@ -4,6 +4,14 @@
   width: 80%;
 }
 
+.link-container_inputE::-moz-placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
+.link-container_inputE::placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
 .main-nav {
   display: flex;
   flex-direction: row;
@@ -401,6 +409,14 @@
 .margin-inline {
   margin: 3rem auto;
   width: 80%;
+}
+
+.link-container_inputE::-moz-placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
+.link-container_inputE::placeholder {
+  color: hsl(0, 87%, 67%);
 }
 
 .boost-section {
